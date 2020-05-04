@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #e50914;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  -webkit-border-before-width: 100%;
+}
+
+section {
+  border-top: 8px solid rgba(121, 118, 118, 0.65);
+}
+
+.showcase {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background: url("./img/netflixbg2.png") no-repeat center center / cover;
+}
+/*pseudo element creating an overlay absolute position rgba color and inset box shadow */
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  box-shadow: inset 280px 150px 250px black, inset -280px -150px 250px black;
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+.showcase-top img {
+  width: 180px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem;
+  z-index: 2;
+}
+.showcase-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.showcase-content p {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 2rem;
+}
+
+.showcase-content input {
+  font-size: 2.5rem;
+  margin-right: -1px;
+}
+input::placeholder {
+  font-size: 1rem;
+  align-self: center;
+  justify-content: center;
+}
+
+/*Buttons*/
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+.btn-lg {
+  font-size: 2rem;
+  padding: 0.8rem 1.5rem;
+}
+
+/*three rows styling*/
+.separate {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(121, 118, 118, 0.65);
+  margin: 3rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+.tab-item {
+  display: flex;
+  width: 80%;
+  height: 35vh;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.tab-item img {
+  width: 30%;
+  height: auto;
+}
+.tab-item img:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-in;
+}
+.tab-text {
+  text-align: left;
+}
+.tab-text h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.tab-text p {
+  font-size: 1.9rem;
+}
