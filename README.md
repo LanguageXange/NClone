@@ -1,4 +1,5 @@
-# In progress... 
+# View Live Demo Here: 
+# In Progress...
 
 Styling notes:
 1. psedo class ::after to create an overlay on the background image 
