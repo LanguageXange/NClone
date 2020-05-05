@@ -1,5 +1,5 @@
-# View Live Demo Here: https://languagexange.github.io/NClone/
-# In Progress...
+### View Live Demo Here: https://languagexange.github.io/NClone/
+Still In Progress...
 
 Styling notes:
 1. psedo class ::after to create an overlay on the background image 
